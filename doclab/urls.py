@@ -27,12 +27,12 @@ from rest_framework_simplejwt.views import (
 
 schema_view = get_schema_view(
     openapi.Info(
-        title=" API",
+        title=" DocLab API",
         default_version='v1',
-        description="API",
+        description="API DOCUMENTATION",
         terms_of_service="https://www.yourapp.com/terms/",
-        contact=openapi.Contact(email="contact@yourapp.com"),
-        license=openapi.License(name="Your License"),
+        # contact=openapi.Contact(email="contact@yourapp.com"),
+        # license=openapi.License(name="Your License"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
