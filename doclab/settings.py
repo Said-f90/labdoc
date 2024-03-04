@@ -150,9 +150,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "127.0.0.1:3000",
 ]
-
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",    
+]
 CORS_ALLOW_ALL_ORIGINS = True
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
