@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework',
     'drf_yasg',
+    'corsheaders',
     'apps.about_us',
     'apps.contacts',
     'apps.certificates',
@@ -62,7 +63,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
+
+
+
+
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'doclab.urls'
 
@@ -135,6 +143,11 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
+
+CORS_ALLOWED_ORIGINS = [
+    "https://salymbekov.pythonanywhere.com",
+    "https://salymbekov.pythonanywhere.com",
+]
 
 
 # Default primary key field type
