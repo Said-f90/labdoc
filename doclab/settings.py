@@ -147,7 +147,11 @@ MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
 CORS_ALLOWED_ORIGINS = [
     "https://salymbekov.pythonanywhere.com",
     "https://salymbekov.pythonanywhere.com",
+    "localhost:3000",
+    "127.0.0.1:3000",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Default primary key field type
