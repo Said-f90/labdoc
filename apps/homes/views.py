@@ -5,3 +5,5 @@ from apps.homes.serilizers import LaborotorySerializer
 class LaborotoryApiViewSet(ModelViewSet):
     queryset = Laborotory.objects.all()
     serializer_class = LaborotorySerializer
+
+ 
